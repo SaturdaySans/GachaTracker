@@ -13,3 +13,4 @@ Three Stars: {three_stars}
 
 st.title("---Project Sekai---")
 crystal_count = st.number_input("Crystals",step=300)
+rates(crystal_count)
