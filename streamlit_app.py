@@ -1,4 +1,4 @@
 import streamlit as st
 
 st.title("---Gacha Tracker---")
-st.pagelink("pages/project-sekai.py",label="Project Sekai")
+st.page_link("pages/project-sekai.py",label="Project Sekai")
