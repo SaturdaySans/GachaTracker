@@ -12,5 +12,5 @@ def rates(pulls):
 
 st.title("---Project Sekai---")
 crystal_count = st.number_input("Crystals",step=300)
-pulls=300*math.floor(crystal_count/300)
+pulls=math.floor(crystal_count/300)
 rates(pulls)
