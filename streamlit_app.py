@@ -1,6 +1,4 @@
 import streamlit as st
 
 st.title("---Gacha Tracker---")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.pagelink("project-sekai.py",label="Project Sekai")
