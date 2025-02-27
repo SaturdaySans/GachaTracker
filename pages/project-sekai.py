@@ -10,9 +10,9 @@ def rates(pulls):
     featured_four_stars = four_stars * 0.4
     st.title("Rates")
     st.write(f"Pulls: {pulls}")
-    st.write(f"Featured 4*: {featured_four_stars}")
-    st.write(f"Four Stars: {four_stars}")
-    st.write(f"Three Stars: {three_stars}")
+    st.write(f"Featured 4 Stars: {featured_four_stars}")
+    st.write(f"4 Stars: {four_stars}")
+    st.write(f"3 Stars: {three_stars}")
     st.write(f"Leftover Crystals: {leftover_crystal}")
 
 
