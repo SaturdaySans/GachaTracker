@@ -7,7 +7,7 @@ import math
 def rates(pulls):
     three_stars = round(pulls*0.15,2)
     four_stars = round(pulls*0.03,2)
-    featured_four_stars = four_stars * 0.4
+    featured_four_stars = round(four_stars * 0.4,2)
     st.title("Rates")
     st.write(f"Pulls: {pulls}")
     st.write(f"Featured 4 Stars: {featured_four_stars}")
