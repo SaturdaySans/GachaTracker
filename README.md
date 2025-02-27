@@ -1,19 +1,9 @@
-# 🎈 Blank app template
+# Gacha Rate Calculator
 
-A simple Streamlit app template for you to modify!
+This app is designed for Gacha and Gambling Addicts
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
 
-### How to run it on your own machine
 
-1. Install the requirements
+[Open in Streamlit](https://gachatracker.streamlit.app//)
 
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+---------------------------------------------------------------------------------------------------------------------------
