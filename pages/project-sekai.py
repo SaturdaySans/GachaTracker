@@ -33,7 +33,6 @@ def rates(pulls):
         st.line_chart(loaded_data)
     else:
         loaded_data = loaded_data.drop(columns=["3rate"])
-        loaded_data = loaded_data[]
 
 # Streamlit UI
 st.title("---Project Sekai---")
