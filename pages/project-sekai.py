@@ -31,7 +31,7 @@ def rates(pulls):
     st.title("Rates")
     st.write(f"Pulls: {pulls}")
     st.write(f"Leftover Crystals: {leftover_crystal}")
-    st.line_chart(loaded_data)
+    st.line_chart(loaded_data, x="pull")
 
 # Streamlit UI
 st.title("---Project Sekai---")
