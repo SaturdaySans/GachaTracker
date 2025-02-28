@@ -28,7 +28,12 @@ def rates(pulls):
     st.write(f"4 Stars: {four_stars}")
     st.write(f"3 Stars: {three_stars}")
     st.write(f"Leftover Crystals: {leftover_crystal}")
-    st.line_chart(loaded_data)
+    n = st.checkbox("Display Three Stars")
+    if n:
+        st.line_chart(loaded_data)
+    else:
+        loaded_data = loaded_data.drop(columns=["3rate"])
+        loaded_data = loaded_data[]
 
 # Streamlit UI
 st.title("---Project Sekai---")
