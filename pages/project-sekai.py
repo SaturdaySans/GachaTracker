@@ -10,6 +10,10 @@ def rates(pulls):
     # Ensure the CSV has correct columns
     loaded_data = pd.DataFrame(columns=["3rate", "4rate", "frate"])
     
+    three_stars = round(pulls*0.15,2)
+    four_stars = round(pulls*0.03,2)
+    featured_four_stars = round(four_stars * 0.4,2)
+
     for i in range(1, pulls + 1):  # Start at 1 for natural counting
         thstars = round(i * 0.15, 2)
         fostars = round(i * 0.03, 2)
@@ -20,9 +24,9 @@ def rates(pulls):
     
     st.title("Rates")
     st.write(f"Pulls: {pulls}")
-    st.write(f"Featured 4 Stars: {festars}")
-    st.write(f"4 Stars: {fostars}")
-    st.write(f"3 Stars: {thstars}")
+    st.write(f"Featured 4 Stars: {featured_four_stars}")
+    st.write(f"4 Stars: {four_stars}")
+    st.write(f"3 Stars: {three_stars}")
     st.write(f"Leftover Crystals: {leftover_crystal}")
     st.line_chart(loaded_data)
 
