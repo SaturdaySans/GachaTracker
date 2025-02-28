@@ -8,8 +8,7 @@ file_path = "pjsk-data.csv"
 # Function
 def rates(pulls):
     # Ensure the CSV has correct columns
-    if loaded_data.empty:
-        loaded_data = pd.DataFrame(columns=["3rate", "4rate", "frate"])
+    loaded_data = pd.DataFrame(columns=["3rate", "4rate", "frate"])
     
     for i in range(1, pulls + 1):  # Start at 1 for natural counting
         thstars = round(i * 0.15, 2)
