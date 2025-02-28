@@ -11,18 +11,18 @@ def load_data():
     return pd.read_csv(file_path)
 
 def save_data():
-    data.to_csv(file_path)
+    data.to_csv(file_path, index=False)
 
 def rates(pulls):
     three_stars = round(pulls*0.15,2)
     four_stars = round(pulls*0.03,2)
     featured_four_stars = round(four_stars * 0.4,2)
-    data = load_data()
+    loaded_data = load_data()
     for i in range(pulls):
         thstars = round(i*0.15,2)
         fostars = round(i*0.03,2)
         festars = round(fostars * 0.4,2)
-        data.loc[len(data)] = [thstars, fostars, festars]
+        data.loc[len(loaded_data)] = [thstars, fostars, festars]
 
     save_data()
     
