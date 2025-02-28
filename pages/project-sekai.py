@@ -5,16 +5,8 @@ import pandas as pd
 # Variables
 file_path = "pjsk-data.csv"
 
-# Functions
-def load_data():
-    return pd.read_csv(file_path)
-
-def save_data(data):
-    data.to_csv(file_path, index=False)
-
+# Function
 def rates(pulls):
-    loaded_data = load_data()
-    
     # Ensure the CSV has correct columns
     if loaded_data.empty:
         loaded_data = pd.DataFrame(columns=["3rate", "4rate", "frate"])
@@ -26,7 +18,6 @@ def rates(pulls):
         
         loaded_data.loc[len(loaded_data)] = [thstars, fostars, festars]
     
-    save_data(loaded_data)
     
     st.title("Rates")
     st.write(f"Pulls: {pulls}")
