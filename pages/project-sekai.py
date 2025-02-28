@@ -23,7 +23,7 @@ def rates(pulls):
     st.write(f"4 Stars: {four_stars}")
     st.write(f"3 Stars: {three_stars}")
     st.write(f"Leftover Crystals: {leftover_crystal}")
-    st.write(load_data())
+    st.linechart(load_data())
 
 
 st.title("---Project Sekai---")
