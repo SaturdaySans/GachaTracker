@@ -30,10 +30,10 @@ def rates(pulls):
     st.write(f"Leftover Crystals: {leftover_crystal}")
     n = st.checkbox("Display Three Stars")
     if n:
-        st.line_chart(loaded_data, x_label="Number Of Pulls", y_label="Rate")
+        st.line_chart(loaded_data, x_label="Number Of Pulls", y_label="Rate", color=["#00FF00", "#FF0000", "#0000FF"])
     else:
         loaded_data = loaded_data.drop(columns=["3rate"])
-        st.line_chart(loaded_data, x_label="Number Of Pulls", y_label="Rate")
+        st.line_chart(loaded_data, x_label="Number Of Pulls", y_label="Rate", color=["#FF0000", "#0000FF"])
 
 # Streamlit UI
 st.title("---Project Sekai---")
